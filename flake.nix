@@ -1,5 +1,5 @@
 {
-  description = "Plantilla de flake";
+  description = "Flake para desarrollo de configuración NixOS";
 
   inputs = {
     # Cambiar la versión de nixpkgs según corresponda

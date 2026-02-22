@@ -35,11 +35,7 @@
 
 	#services.fwupd.enable = true;
 ## Seguridad
-# Límite de archivos abiertos
-  security.pam.loginLimits = [
-      { domain = "*"; type = "hard"; item = "nofile"; value = "32768"; }
-      { domain = "*"; type = "soft"; item = "nofile"; value = "32768"; }
-  ];
+
 # Polkit
 	security.polkit.enable = true;
 

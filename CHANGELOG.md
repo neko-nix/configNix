@@ -1,8 +1,4 @@
-# [VERSIÓN X.Y.Z]
-## Fecha YYYY-MM-DD
+# [V1.0]
+## Fecha 2026-02-22
 ### Agregado
-- 
-### Cambiado
-- 
-### Eliminado
--
+- Configuración base inicial.

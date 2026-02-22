@@ -10,16 +10,18 @@
 Este repositorio contiene la configuración utilizada por neko-nix en su sistema de NixOS.
 
 ## ✅ Funciones actuales:
+- [x] Home Manager
 - [x] Ambiente de escritorio:
     - [x] Hyprland
     - [x] Waybar
-- [x] 
+- [x] Searxng
+- [x] Adguard Home
+- [x] Unbound
 ## 🛠️ Funciones en progreso:
-- [ ]
-- [ ]
+- [ ] Configuración declarativa de Nvim.
 ## ⏳ Funciones planeadas:
-- [ ]
-- [ ] 
+- [ ] Tailscale
+- [ ] Cambiar color scheme del ambiente de escritorio automáticamente según el fondo de pantall
 
 ## 🧾 Changelog
 La lista completa de cambios se encuentra en [CHANGELOG](CHANGELOG.md).
@@ -32,13 +34,11 @@ nix develop
 
 ## 🌳 Estructura del proyecto:
 ```text
-├── data                # Bases de datos
-├── scripts             # Scripts sueltos que hagan cosas puntuales fuera de la aplicación en si misma
-├── src                 # Núcleo de la aplicación
-│   └── nombreApp       # Nombre de la app, así es más intuitivo llamarla, tipo `python -m src.nombreApp.core.dataAnalysis` o qué sé yo
-│       ├── core        # Donde están las cosas importantes de la app.
-│       └── utils       # Módulos extra que se llaman desde `core`. La idea es que estos sean independientes y puedan funcionar en otros proyectos.
-└── tests               # Espejo del `src` para hacer pruebas
+├── glava           # Configuración de Glava
+├── nixos           # Configuración de Nixos
+│   ├── dotFiles    # Configuración de dotfiles con Home Manager
+├── scripts         # Scripts varios
+├── flake.nix
 ```
 
 ## ⚖️ Licencia
